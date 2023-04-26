@@ -1,0 +1,10 @@
+div{
+   display: flex;
+   justify-content: center;
+   flex-wrap:wrap;
+   
+}
+h1{
+    text-align: center;
+    flex: 0 1 100%;
+}
