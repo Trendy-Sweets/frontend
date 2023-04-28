@@ -1,10 +1,139 @@
-div{
-   display: flex;
-   justify-content: center;
-   flex-wrap:wrap;
-   
+a {
+  text-decoration: none;
+  color: inherit;
 }
-h1{
-    text-align: center;
-    flex: 0 1 100%;
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #321a06;
+  font-family: "Gotham Pro", sans-serif;
+  background-image: url("../img/background-main.jpeg");
+  background-position: center;
+  /* height: 100vh; */
+  background-size: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.main {
+}
+.container {
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.main__inner {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25),
+  inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 46px;
+  height: calc(100vh - 66px);
+  margin: 33px 0;
+  padding:  40px 30px 0 30px;
+  
+}
+.main__panel {
+  display: flex;
+  align-items: center;
+  float: right;
+  color: #321a06;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 15px 18px;
+  border-radius: 20px;
+ 
+
+}
+.main__dop-info-panel {
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 16px;
+ letter-spacing: 0.5px;
+ text-align: center;
+ text-transform: uppercase;
+ padding: 8px 20px;
+border-radius: 9px;
+border: 2px solid #321A06;
+
+
+}
+.main__basket-panel {
+  margin-left: 18px;
+  position: relative;
+  padding-right: 18px;
+}
+.main__basket-panel::after{
+  content: '';
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 5px;
+  width: 2px;
+  height: 30px;
+  background-color: #000;
+}
+.main__balance-panel {
+  margin-left: 18px;
+  display: flex;
+  align-items: center;
+  
+}
+.main__balance-number-panel {
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 16px;
+  
+}
+.main__balance-valuta-panel{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 4px;
+  margin-left: 5px;
+}
+.main__authorization-panel {
+  border: 2px solid #321A06;
+  border-radius: 9px;
+  padding: 5px 10px;
+  margin-left: 18px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 16px;
+ letter-spacing: 1px;
+ text-align: left;
+}
+.main__btn-log-panel {
+
+  position: relative;
+  padding-right: 20px;
+}
+.main__btn-log-panel::after {
+  content: '/';
+  top: 4px;
+  right: 0;
+  position: absolute;
+  display: block;
+}
+.main__btn-reg-panel {
+}
+.main__burger-menu-panel {
+  margin-left: 18px;
+  padding-top: 5px;
+}
+
