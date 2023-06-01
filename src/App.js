@@ -1,8 +1,17 @@
-import './App.css';
-import Main from './components/main/Main';
+import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
+import Main from "./components/main/Main";
+import Product from "./components/product/product";
+import "./App.css";
 function App() {
   return (
-    <Main/>
+    <>
+      <BrowserRouter>
+        <Routes>
+        <Route exact path="/" element={<Main/>}/>
+        <Route path="/product/:id" element={<Product/>}/>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

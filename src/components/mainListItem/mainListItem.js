@@ -7,7 +7,8 @@ function MainListItem({
   productgroupMaxTime,
 }) {
   const productColor = products.map((item) => {
-    return <a className="main__item-colors" style={{ backgroundColor: item.productColor}} href="#"></a>;
+    let a = `http://localhost:3000/product/${item.productId}`;
+    return <a className="main__item-colors" style={{ backgroundColor: item.productColor}} href={a}></a>;
   });
 
   return (

@@ -1,0 +1,39 @@
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  body {
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #321a06;
+    font-family: "Gotham Pro", sans-serif;
+    background-image: url("img/background-main.jpeg");
+    background-position: center;
+    /* height: 100vh; */
+    background-size: 100%;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main {
+  }
+  .container {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
