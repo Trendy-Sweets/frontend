@@ -48,7 +48,6 @@ p {
   padding: 40px 30px 40px 30px;
   display: flex;
   justify-content: space-around;
-  max-height: 900px;
 }
 .product__block-left {
   flex: 0 1 45%;

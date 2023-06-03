@@ -1,0 +1,237 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Gotham Pro", sans-serif;
+  background-image: url("../img/background-main.jpeg");
+  background-position: center;
+  /* height: 100vh; */
+  background-size: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.basket {
+}
+.container {
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.basket__inner {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 46px;
+  height: calc(100vh - 124px);
+  margin: 22px 0;
+  padding: 40px 30px 40px 30px;
+}
+.basket__top {
+  display: flex;
+  justify-content: space-between;
+}
+.basket__title {
+  font-family: Gotham Pro;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.basket__exit img {
+  width: 50px;
+  height: 50px;
+}
+.basket__block {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.basket__block-left {
+  flex: 0 1 70%;
+}
+.basket__top-line {
+  display: flex;
+  background: rgba(243, 243, 243, 0.4);
+  border-radius: 10px;
+  padding: 15px 33px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+}
+.basket__count {
+  padding: 10px 0;
+}
+.basket__count-first {
+  padding-right: 33px;
+  border-right: 2px solid #000;
+  margin-right: 33px;
+  position: relative;
+}
+.basket__count-first::after {
+}
+.basket__body {
+}
+.basket__item {
+  font-family: Gotham Pro;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-top: 20px;
+  background: rgba(243, 243, 243, 0.4);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 20px;
+}
+.basket__cross-img {
+  width: 20px;
+  height: 20px;
+}
+.basket__img {
+  padding-left: 18px;
+  width: 60px;
+  height: 80px;
+}
+.basket__name {
+  padding-left: 18px;
+  text-align: center;
+  max-width: 210px;
+  color: #321a06;
+}
+.basket__time {
+  color: #321a06;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+}
+.basket__time-title {
+  text-align: center;
+  max-width: 200px;
+  padding-left: 18px;
+}
+.basket__time-number {
+  padding-left: 10px;
+}
+.basket__amount {
+  padding-left: 18px;
+  color: #321a06;
+  display: flex;
+  align-items: center;
+}
+.amaut-button {
+  background: rgba(243, 243, 243, 0.4);
+  box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 35%;
+  font-size: 35px;
+  padding: 2px 3px;
+  display: flex;
+  align-items: center;
+}
+.basket__amount-reduce {
+  padding-bottom: 5px;
+}
+.basket__amount-sum {
+  padding: 0 8px;
+  font-family: Gotham Pro;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 39px;
+}
+.basket__price {
+  padding-left: 18px;
+  font-family: Gotham Pro;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  color: #321a06;
+  display: flex;
+  align-items: center;
+}
+.basket__price-valuta {
+  font-size: 23px;
+  padding-left: 3px;
+}
+.basket__right-block {
+  background: rgba(217, 217, 217, 0.4);
+  border-radius: 20px;
+  padding: 20px 15px;
+  flex: 0 1 25%;
+  font-family: Gotham Pro;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+.basket__line {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+.basket__text-delivary {
+  max-width: 200px;
+}
+.line-mide {
+  border-bottom: 3px solid #00000066;
+  border-top: 3px solid #00000066;
+}
+.basket__sum {
+  padding: 5px 20px 5px 5px;
+}
+
+.basket__sum {
+  text-align: end;
+}
+.basket__value {
+  padding-left: 4px;
+  font-size: 21px;
+}
+.basket__final-price {
+  font-size: 34px;
+}
+.basket__dop-info {
+  padding-top: 3px;
+  font-family: Gotham Pro;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  text-align: left;
+  max-width: 105px;
+}
+.basket__design {
+  display: inline-block;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  margin: 0 auto;
+  background: #ffe3aa;
+  color: #321a06;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
