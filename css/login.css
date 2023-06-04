@@ -1,0 +1,142 @@
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #321a06;
+    font-family: "Gotham Pro", sans-serif;
+    background-image: url("../img/background-main.jpeg");
+    background-position: center;
+    /* height: 100vh; */
+    background-size: 100%;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login {
+  }
+  .container {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .login__inner {
+    height: calc(100vh - 84px);
+    margin: 22px 0;
+    padding: 40px 30px 0 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .login__block {
+    background: rgba(243, 243, 243, 0.5);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2),
+      inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(7.5px);
+    display: inline-block;
+    max-height: 370px;
+    border-radius: 20px;
+    padding: 50px 30px 30px 30px;
+  }
+  *:focus {
+    outline: none;
+  }
+  .login__title {
+    font-family: Gotham Pro;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .login-input {
+    border: 0;
+    background: none;
+    color: #0a0a0a;
+    padding: 5px;
+    border-bottom: 2px solid #0a0a0a;
+  }
+  .login__exit {
+    
+      position: absolute;
+      top: -5px;
+      right: 10px;
+  
+    text-align: end;
+  }
+  .login__exit img {
+    width: 35px;
+    height: 35px;
+  }
+  .login-input:focus {
+    border: 0;
+    background: none;
+    border-bottom: 2px solid #0a0a0a;
+  }
+  .login__bottom-test {
+    font-family: Gotham Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 10px;
+    padding-left: 2px;
+    text-align: left;
+    color: #ab2917;
+    padding-bottom: 10px;
+  }
+  input::placeholder {
+    color: #0a0a0a;
+  }
+  .login__block-button {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .login__button {
+    border: 0;
+    background: #ee6b00cc;
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+  .login-block-login {
+    display: flex;
+    justify-content: center;
+  }
+  .login__str-login {
+    font-family: Gotham Pro;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #6d3b12;
+    border-bottom: 1px solid #6d3b12;
+    text-align: center;
+  }
+  
+.login__str-login{
+    background-color: #C77B3E;
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    
+}
