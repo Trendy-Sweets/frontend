@@ -96,7 +96,7 @@ function Reg() {
               <div className="reg__bottom-test">{data? data.repassword.isOk? "" :data.repassword.msg:""}</div>
               <div className="reg__block-button">
                 <button className="reg__button" onClick={() => postData()}>
-                  увійти
+                 реєстрація
                 </button>
               </div>
               <div className="reg-block-login">

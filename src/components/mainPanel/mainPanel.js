@@ -1,4 +1,4 @@
-function MainPanel({basketPrice}) {
+function MainPanel({basketPrice,logaut}) {
   return (
     <div className="main__panel">
       <a className="main__dop-info-panel" href="#">
@@ -42,12 +42,13 @@ function MainPanel({basketPrice}) {
         </span>
       </a>
       <div className="main__authorization-panel">
-        <a className="main__btn-log-panel" href="/">
+        {logaut? logaut.clientName:<>
+        <a className="main__btn-log-panel" href="login">
           ВХІД
         </a>
-        <a className="main__btn-reg-panel" href="/">
+        <a className="main__btn-reg-panel" href="reg">
           РЕЄСТРАЦІЯ
-        </a>
+        </a></>}
       </div>
       <a className="main__burger-menu-panel" href="/">
         <svg

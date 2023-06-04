@@ -7,6 +7,7 @@ function Main() {
   const [products, setPordicts] = useState(null);
   const [slogan, setSlogan] = useState(null);
   const[basketPrice, setBasketPrice] = useState(null);
+  const[logaut, setLogaut] = useState(null);
   useEffect(() => {
     fetch("/api")
       .then((response) => response.json())
@@ -14,6 +15,7 @@ function Main() {
         setSlogan(response.slogan)
         setPordicts(response.products)
         setBasketPrice(response.cart.allCartPrice)
+        setLogaut(response.сlient)
       }
       );
   }, []);
@@ -21,7 +23,7 @@ function Main() {
     <section className="main">
       <div className="container">
         <div className="main__inner">
-          <MainPanel basketPrice={basketPrice}  />
+          <MainPanel basketPrice={basketPrice} logaut={logaut}  />
           <MainBlock slogan={slogan}/>
           <MainListProduct products={products}/>
         </div>
