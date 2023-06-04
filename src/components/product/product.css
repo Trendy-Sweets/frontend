@@ -60,6 +60,10 @@
   letter-spacing: 0em;
   color: #ff9494;
 }
+.product__exit-icon-right{
+  width: 35px;
+  height: 35px;
+}
 .product__price-valuta-right {
   font-family: Gotham Pro;
   font-size: 30px;

@@ -1,10 +1,10 @@
-function MainPanel() {
+function MainPanel({basketPrice}) {
   return (
     <div className="main__panel">
       <a className="main__dop-info-panel" href="#">
         Більше інформації
       </a>
-      <a className="main__basket-panel" href="/">
+      <a className="main__basket-panel" href="/basket">
         <svg
           width="37"
           height="37"
@@ -18,7 +18,7 @@ function MainPanel() {
           />
         </svg>
       </a>
-      <a className="main__balance-panel" href="/">
+      <a className="main__balance-panel" href="#">
         <svg
           width="40"
           height="40"
@@ -38,7 +38,7 @@ function MainPanel() {
           />
         </svg>
         <span className="main__balance-number-panel">
-          0<span className="main__balance-valuta-panel">грн</span>
+          {basketPrice? basketPrice:"0"}<span className="main__balance-valuta-panel">грн</span>
         </span>
       </a>
       <div className="main__authorization-panel">
