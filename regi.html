@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reg.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="reg">
+      <div class="container">
+        <div class="reg__inner">
+            <a class="reg__exit" href="">
+                <img src="img/exit-new.svg" alt="">
+            </a>
+            <div class="reg__line">
+          
+          <div class="reg__block">
+
+            <h3 class="reg__title">Реєстрація</h3>
+            <input class="reg__gmail-input reg-input"
+            type="text"
+            placeholder="Пошта"
+            onChange={handleChange}
+          />
+          <div class="reg__bottom-test">не верно указано</div>
+          <input class="reg__gmail-input reg-input"
+          type="text"
+          placeholder="Ім’я"
+          onChange={handleChange}
+        />
+        <div class="reg__bottom-test">не верно указано</div>
+        <input class="reg__gmail-input reg-input"
+            type="text"
+            placeholder="Пароль"
+            onChange={handleChange}
+          />
+          <div class="reg__bottom-test">не верно указано</div>
+          <input class="reg__gmail-input reg-input"
+            type="text"
+            placeholder="Підтвердження паролю"
+            onChange={handleChange}
+          />
+          <div class="reg__bottom-test">не верно указано</div>
+        <div class="reg__block-button">
+          <button class="reg__button">увійти</button>
+        </div>
+        <div class="reg-block-login">
+          <a class="reg__str-login" href="#">В мене є аккаунт</a>
+        </div>
+        </div>
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
