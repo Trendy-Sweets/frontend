@@ -3,6 +3,7 @@ import Main from "./components/main/Main";
 import Product from "./components/product/product";
 import "./App.css";
 import Basket from "./components/basket/basket";
+import Reg from "./components/reg/reg";
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
         <Route exact path="/" element={<Main/>}/>
         <Route path="product/:id" element={<Product/>}/>
         <Route path="basket" element={<Basket/>}/>
+        <Route path="reg" element={<Reg/>}/>
         </Routes>
       </BrowserRouter>
     </>

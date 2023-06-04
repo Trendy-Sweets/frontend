@@ -1,4 +1,3 @@
-import { useParams,useLocation  } from "react-router-dom";
 import imgProduct from "../../img/img-product.png";
 import icomtime from '../../img/clock-time.svg';
 function MainListItem({
@@ -29,6 +28,9 @@ function MainListItem({
             <p className="main__title-color">Колір:</p>
             <div className="main__list-colors">{productColor}</div>
           </div>
+          <a className="main__full-info-item" href="#">
+            Докладніше
+          </a>
           <div className="main__price-item">
             <p className="main__number-price-item">{productgorupMinPrice}</p>
             <p className="main__currency-price-item">грн</p>
