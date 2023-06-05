@@ -5,6 +5,8 @@ import "./App.css";
 import Basket from "./components/basket/basket";
 import Reg from "./components/reg/reg";
 import Login from "./components/login/login";
+import Form from "./components/form/form";
+
 function App() {
   return (
     <>
@@ -15,6 +17,7 @@ function App() {
         <Route path="basket" element={<Basket/>}/>
         <Route path="reg" element={<Reg/>}/>
         <Route path="login" element={<Login/>}/>
+        <Route path="form" element={<Form/>}/>
         </Routes>
       </BrowserRouter>
     </>
