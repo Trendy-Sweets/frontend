@@ -1,3 +1,4 @@
+import iconProfile from "../../img/icon-profile.svg";
 function MainPanel({basketPrice,logaut}) {
   return (
     <div className="main__panel">
@@ -37,12 +38,21 @@ function MainPanel({basketPrice,logaut}) {
             fill="#321A06"
           />
         </svg>
+        
         <span className="main__balance-number-panel">
           {basketPrice? basketPrice:"0"}<span className="main__balance-valuta-panel">грн</span>
         </span>
       </a>
       <div className="main__authorization-panel">
-        {logaut? logaut.clientName:<>
+        {logaut? logaut.IsLogin ? <span className="main__profile"><img src={iconProfile}/> <span className="main__profile-name"> {logaut.clientName}</span>  </span>:
+        <>
+        <a className="main__btn-log-panel" href="login">
+          ВХІД
+        </a>
+        <a className="main__btn-reg-panel" href="reg">
+          РЕЄСТРАЦІЯ
+        </a></>
+        :<>
         <a className="main__btn-log-panel" href="login">
           ВХІД
         </a>
