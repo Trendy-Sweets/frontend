@@ -14,31 +14,28 @@ function Login() {
   };
   const postData = async () => {
     try {
-        const data = {
-        "email": `${email}`,
-        "password": `${password}`,
-        };
-        const response = await fetch("/api/login", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-          });
-    
-          const responseData = await response.json();
-          setData(responseData);
-          console.log("Ответ сервера:", responseData);
-        
-        } catch (error) {
-          console.error("Ошибка при отправке запроса:", error);
-        }
+      const data = {
+        email: `${email}`,
+        password: `${password}`,
       };
-      if(data.okForm){
-        window.confirm("ви успішно зайшли в акаунт");
-        window.location.href = '../';
-      }
-  
+      const response = await fetch("/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const responseData = await response.json();
+      setData(responseData);
+      console.log("Ответ сервера:", responseData);
+    } catch (error) {
+      console.error("Ошибка при отправке запроса:", error);
+    }
+  };
+  if (data.okForm) {
+    window.location.href = "../";
+  }
 
   return (
     <section className="login">
@@ -61,18 +58,24 @@ function Login() {
                   value={email}
                   onChange={handleChangeEmail}
                 />
-                <div className="login__bottom-test">{data? data.email.isOk? "" :data.email.msg:""}</div>
+                <div className="login__bottom-test">
+                  {data ? (data.email.isOk ? "" : data.email.msg) : ""}
+                </div>
                 <input
                   className="login__gmail-input login-input"
                   type="text"
                   placeholder="Пароль"
                   value={password}
-                onChange={handleChangePassword}
+                  onChange={handleChangePassword}
                 />
-                <div className="login__bottom-test">{data? data.password.isOk? "" :data.password.msg:""}</div>
+                <div className="login__bottom-test">
+                  {data ? (data.password.isOk ? "" : data.password.msg) : ""}
+                </div>
 
                 <div className="login__block-button">
-                  <button className="login__button" onClick={() => postData()}>увійти</button>
+                  <button className="login__button" onClick={() => postData()}>
+                    увійти
+                  </button>
                 </div>
                 <div className="login-block-login">
                   <a className="login__str-login" href="#">

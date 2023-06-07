@@ -48,7 +48,7 @@ function Basket() {
     const jsonString = JSON.stringify(obj);
     document.cookie = `cart=${jsonString}; domain:localhost ;path=/`;
     window.location.reload();
-  }
+  };
   function getCookie(name) {
     var matches = document.cookie.match(
       new RegExp(
@@ -78,53 +78,58 @@ function Basket() {
                 <span className="basket__count">Відкладені 0</span>
               </div>
               <div className="basket__body">
-                {products
-                  ? products.map((item) => {
-                      return (
-                        <div className="basket__item" key={item.productid}>
-                          <button className="basket__cross" onClick={() => productDelete(item.productid)}>
-                            <img
-                              className="basket__cross-img"
-                              src={icon}
-                              alt=""
-                            />
+                {products ? (
+                  products.map((item) => {
+                    return (
+                      <div className="basket__item" key={item.productid}>
+                        <button
+                          className="basket__cross"
+                          onClick={() => productDelete(item.productid)}
+                        >
+                          <img
+                            className="basket__cross-img"
+                            src={icon}
+                            alt=""
+                          />
+                        </button>
+                        <img className="basket__img" src={img} alt="" />
+                        <span className="basket__name">{item.name}</span>
+                        <span className="basket__time">
+                          <span className="basket__time-title">
+                            Орієнтовний час доставки
+                          </span>
+                          <span className="basket__time-number">
+                            {item.maxtime} години
+                          </span>
+                        </span>
+                        <span className="basket__amount">
+                          <button
+                            className="basket__amount-add amaut-button"
+                            onClick={() => productAdd(item.productid)}
+                          >
+                            +
                           </button>
-                          <img className="basket__img" src={img} alt="" />
-                          <span className="basket__name">{item.name}</span>
-                          <span className="basket__time">
-                            <span className="basket__time-title">
-                              Орієнтовний час доставки
-                            </span>
-                            <span className="basket__time-number">
-                              {item.maxtime} години
-                            </span>
+                          <span className="basket__amount-sum">
+                            {item.count}
                           </span>
-                          <span className="basket__amount">
-                            <button
-                              className="basket__amount-add amaut-button"
-                              onClick={() => productAdd(item.productid)}
-                            >
-                              +
-                            </button>
-                            <span className="basket__amount-sum">
-                              {item.count}
-                            </span>
-                            <button
-                              className="basket__amount-reduce amaut-button"
-                              href="#"
-                              onClick={() => productMinus(item.productid)}
-                            >
-                              -
-                            </button>
-                          </span>
-                          <span className="basket__price">
-                            {item.price}
-                            <span className="basket__price-valuta">грн</span>
-                          </span>
-                        </div>
-                      );
-                    })
-                  : <h3 className="basket__no-product">Карзина пустая </h3>}
+                          <button
+                            className="basket__amount-reduce amaut-button"
+                            href="#"
+                            onClick={() => productMinus(item.productid)}
+                          >
+                            -
+                          </button>
+                        </span>
+                        <span className="basket__price">
+                          {item.price}
+                          <span className="basket__price-valuta">грн</span>
+                        </span>
+                      </div>
+                    );
+                  })
+                ) : (
+                  <h3 className="basket__no-product">Карзина пустая </h3>
+                )}
               </div>
             </div>
 
@@ -158,7 +163,7 @@ function Basket() {
                 </span>
               </div>
               <div className="basket__line">
-                <a className="basket__design" href="#">
+                <a className="basket__design" href="../form">
                   Оформити заказ
                 </a>
               </div>
