@@ -1,5 +1,5 @@
 import imgProduct from "../../img/img-product.png";
-import icomtime from '../../img/clock-time.svg';
+import icomtime from "../../img/clock-time.svg";
 function MainListItem({
   productId,
   productgroupName,
@@ -9,7 +9,12 @@ function MainListItem({
 }) {
   const productColor = products.map((item) => {
     let a = `${window.location.origin}/product/${item.productId}`;
-    return <a className="main__item-colors" style={{ backgroundColor: item.productColor}} href={a}></a>;
+    return (
+      <span
+        className="main__item-colors"
+        style={{ backgroundColor: item.productColor }}
+      ></span>
+    );
   });
 
   return (
@@ -19,7 +24,7 @@ function MainListItem({
         <h3 className="main__title-item">{productgroupName}</h3>
         <div className="main__block-item">
           <div className="main__time-item">
-            <img src={icomtime} alt=""/>
+            <img src={icomtime} alt="" />
             <span className="main__time-do-item">
               {productgroupMaxTime} години
             </span>
@@ -28,7 +33,14 @@ function MainListItem({
             <p className="main__title-color">Колір:</p>
             <div className="main__list-colors">{productColor}</div>
           </div>
-          <a className="main__full-info-item" href="#">
+          <a
+            className="main__full-info-item"
+            href={
+              products
+                ? `${window.location.origin}/product/${products[0].productId}`
+                : "#"
+            }
+          >
             Докладніше
           </a>
           <div className="main__price-item">

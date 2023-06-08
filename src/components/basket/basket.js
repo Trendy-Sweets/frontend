@@ -128,7 +128,7 @@ function Basket() {
                     );
                   })
                 ) : (
-                  <h3 className="basket__no-product">Карзина пустая </h3>
+                  <h3 className="basket__no-product">Кошик порожній</h3>
                 )}
               </div>
             </div>
@@ -163,9 +163,23 @@ function Basket() {
                 </span>
               </div>
               <div className="basket__line">
-                <a className="basket__design" href="../form">
-                  Оформити заказ
-                </a>
+                {countProduct > 0 ? (
+                  <a className="basket__design" href="../form">
+                    Оформити заказ
+                  </a>
+                ) : (
+                  <button
+                    className="basket__design"
+                    onClick={() =>
+                      alert(
+                        "для оформлення замовлення оберіть хоча б один товар"
+                      )
+                    }
+                  >
+                    {" "}
+                    Оформити заказ
+                  </button>
+                )}
               </div>
             </div>
           </div>

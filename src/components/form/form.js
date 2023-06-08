@@ -14,6 +14,8 @@ function Form() {
   const [address, setAddress] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
+  // const [dataComent, setDataComent] = useState("");
+
   const handleChangeFio = (e) => {
     setFio(e.target.value);
   };
@@ -39,7 +41,7 @@ function Form() {
         region: "DP",
         city: "DP",
         addres: address,
-        date: data,
+        data: date,
         time: time,
       };
       const response = await fetch("/api/order/add", {
@@ -52,6 +54,7 @@ function Form() {
 
       const responseData = await response.json();
       setData(responseData);
+
       console.log("Ответ сервера:", responseData);
     } catch (error) {
       console.error("Ошибка при отправке запроса:", error);

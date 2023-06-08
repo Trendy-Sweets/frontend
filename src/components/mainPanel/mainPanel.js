@@ -1,5 +1,18 @@
 import iconProfile from "../../img/icon-profile.svg";
-function MainPanel({basketPrice,logaut}) {
+import React, { useState, useEffect } from "react";
+import "./mainPanel.css";
+
+function MainPanel({ basketPrice, logaut, cart }) {
+  const [exitStatus, setExitStatus] = useState(null);
+  const exitF = () => {
+    fetch(`/api/logout`)
+      .then((response) => response.json())
+      .then((response) => {
+        console.log(response);
+        window.location.reload();
+      });
+  };
+  console.log(cart + "количество продуктов в карзине");
   return (
     <div className="main__panel">
       <a className="main__dop-info-panel" href="#">
@@ -18,6 +31,7 @@ function MainPanel({basketPrice,logaut}) {
             fill="#321A06"
           />
         </svg>
+        {cart ? <span className="main__basket-counter">{cart}</span> : ""}
       </a>
       <a className="main__balance-panel" href="#">
         <svg
@@ -38,45 +52,72 @@ function MainPanel({basketPrice,logaut}) {
             fill="#321A06"
           />
         </svg>
-        
+
         <span className="main__balance-number-panel">
-          {basketPrice? basketPrice:"0"}<span className="main__balance-valuta-panel">грн</span>
+          {basketPrice ? basketPrice : "0"}
+          <span className="main__balance-valuta-panel">грн</span>
         </span>
       </a>
       <div className="main__authorization-panel">
-        {logaut? logaut.IsLogin ? <span className="main__profile"><img src={iconProfile}/> <span className="main__profile-name"> {logaut.clientName}</span>  </span>:
-        <>
-        <a className="main__btn-log-panel" href="login">
-          ВХІД
-        </a>
-        <a className="main__btn-reg-panel" href="reg">
-          РЕЄСТРАЦІЯ
-        </a></>
-        :<>
-        <a className="main__btn-log-panel" href="login">
-          ВХІД
-        </a>
-        <a className="main__btn-reg-panel" href="reg">
-          РЕЄСТРАЦІЯ
-        </a></>}
+        {logaut ? (
+          logaut.IsLogin ? (
+            <span className="main__profile">
+              <img src={iconProfile} />{" "}
+              <span className="main__profile-name"> {logaut.clientName}</span>{" "}
+            </span>
+          ) : (
+            <>
+              <a className="main__btn-log-panel" href="login">
+                ВХІД
+              </a>
+              <a className="main__btn-reg-panel" href="reg">
+                РЕЄСТРАЦІЯ
+              </a>
+            </>
+          )
+        ) : (
+          <>
+            <a className="main__btn-log-panel" href="login">
+              ВХІД
+            </a>
+            <a className="main__btn-reg-panel" href="reg">
+              РЕЄСТРАЦІЯ
+            </a>
+          </>
+        )}
       </div>
-      <a className="main__burger-menu-panel" href="/">
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M6.66748 8.04877H33.3341M6.66748 18.0488H33.3341M6.66748 28.0488H33.3341"
-            stroke="#321A06"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </a>
+      <div class="dropdown01 main__burger-menu-panel">
+        <button class="dropbtn01">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.66748 8.04877H33.3341M6.66748 18.0488H33.3341M6.66748 28.0488H33.3341"
+              stroke="#321A06"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          {logaut ? (
+            logaut.IsLogin ? (
+              <button className="drop__button" onClick={() => exitF()}>
+                Виxiд
+              </button>
+            ) : (
+              ""
+            )
+          ) : (
+            ""
+          )}
+        </div>
+      </div>
     </div>
   );
 }

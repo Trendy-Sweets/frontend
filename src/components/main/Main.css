@@ -38,11 +38,18 @@
   margin-left: 18px;
   position: relative;
   padding-right: 18px;
-}
-.main__basket-panel {
-  margin-left: 18px;
   position: relative;
-  padding-right: 18px;
+}
+.main__basket-counter {
+  position: absolute;
+  top: -3px;
+  background-color: #dd3c3cc7;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 3px 8px 2px 9px;
+  right: 10px;
 }
 .main__basket-panel::after {
   content: "";
@@ -257,14 +264,14 @@
 .main__list-product-min {
   display: none;
 }
-.main__profile{
+.main__profile {
   display: flex;
   align-items: center;
 }
-.main__profile-name{
+.main__profile-name {
   padding-left: 3px;
 }
-.main__profile img{
+.main__profile img {
   width: 30px;
   height: 30px;
 }
@@ -450,7 +457,7 @@
     padding: 3px 8px;
     border-radius: 10px;
   }
-  .main__profile img{
+  .main__profile img {
     width: 20px;
     height: 20px;
   }

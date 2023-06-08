@@ -7,7 +7,13 @@ function MainListItemMin({
   productgroupMaxTime,
 }) {
   const productColor = products.map((item) => {
-    return <a className="main__item-colors" style={{ backgroundColor: item.productColor}} href="#"></a>;
+    return (
+      <a
+        className="main__item-colors"
+        style={{ backgroundColor: item.productColor }}
+        href="#"
+      ></a>
+    );
   });
 
   return (
@@ -51,7 +57,14 @@ function MainListItemMin({
             <p className="main__title-color">Колір:</p>
             <div className="main__list-colors">{productColor}</div>
           </div>
-          <a className="main__full-info-item" href="#">
+          <a
+            className="main__full-info-item"
+            href={
+              products
+                ? `${window.location.origin}/product/</div>${products[0].productId}`
+                : "#"
+            }
+          >
             Докладніше
           </a>
           <div className="main__price-item">
