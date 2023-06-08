@@ -14,8 +14,16 @@ function Form() {
   const [address, setAddress] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
+  const [login, setLogin] = useState("");
   // const [dataComent, setDataComent] = useState("");
-
+  if (!login) {
+    const result = window.confirm("для оформлення замовлення зайдіть в облік");
+    if (result) {
+      window.location.href = "/login";
+    } else {
+      window.location.href = "/basket";
+    }
+  }
   const handleChangeFio = (e) => {
     setFio(e.target.value);
   };
@@ -54,9 +62,14 @@ function Form() {
 
       const responseData = await response.json();
       setData(responseData);
-
-      console.log("Ответ сервера:", responseData);
+      if (responseData.isCreateOrder) {
+        alert("замовлення успішно створено");
+      } else {
+        alert("замовлення не створено");
+      }
+      // console.log("Ответ сервера:", responseData);
     } catch (error) {
+      alert("замовлення не створено");
       console.error("Ошибка при отправке запроса:", error);
     }
   };
@@ -69,6 +82,7 @@ function Form() {
         setAllCartPrice(response.allCartPrice);
         setRegion(response.region);
         setCityName(response.city);
+        setLogin(response.client.IsLogin);
       });
   }, []);
 

@@ -78,7 +78,7 @@ function Login() {
                   </button>
                 </div>
                 <div className="login-block-login">
-                  <a className="login__str-login" href="#">
+                  <a className="login__str-login" href="../reg">
                     зареєструватись
                   </a>
                 </div>
