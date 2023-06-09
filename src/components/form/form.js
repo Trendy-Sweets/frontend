@@ -15,8 +15,23 @@ function Form() {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [login, setLogin] = useState("");
+
+  useEffect(() => {
+    fetch("/api/cart/addOrderForm")
+      .then((response) => response.json())
+      .then((response) => {
+        setPordicts(response.products);
+        setAllCartPrice(response.allCartPrice);
+        setRegion(response.region);
+        setCityName(response.city);
+        setLogin(response.client.IsLogin);
+        console.log(response);
+      });
+  }, []);
+  console.log(login);
   // const [dataComent, setDataComent] = useState("");
-  if (!login) {
+
+  if (login === false) {
     const result = window.confirm("для оформлення замовлення зайдіть в облік");
     if (result) {
       window.location.href = "/login";
@@ -24,6 +39,7 @@ function Form() {
       window.location.href = "/basket";
     }
   }
+
   const handleChangeFio = (e) => {
     setFio(e.target.value);
   };
@@ -73,18 +89,6 @@ function Form() {
       console.error("Ошибка при отправке запроса:", error);
     }
   };
-
-  useEffect(() => {
-    fetch("/api/cart/addOrderForm")
-      .then((response) => response.json())
-      .then((response) => {
-        setPordicts(response.products);
-        setAllCartPrice(response.allCartPrice);
-        setRegion(response.region);
-        setCityName(response.city);
-        setLogin(response.client.IsLogin);
-      });
-  }, []);
 
   return (
     <section className="form">
