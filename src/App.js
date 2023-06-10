@@ -7,6 +7,7 @@ import Reg from "./components/reg/reg";
 import Login from "./components/login/login";
 import Form from "./components/form/form";
 import MyOrder from "./components/myOrder/myOrder";
+import AdminLogin from "./components/adminLogin/adminLogin";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="form" element={<Form />} />
           <Route path="myOrder" element={<MyOrder />} />
+          <Route path="adminLogin" element={<AdminLogin />} />
         </Routes>
       </BrowserRouter>
     </>
