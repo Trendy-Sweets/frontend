@@ -10,7 +10,7 @@ function Form() {
   const [data, setData] = useState("");
   const [fio, setFio] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState("+38(123)456 78 90");
   const [address, setAddress] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -28,7 +28,6 @@ function Form() {
         console.log(response);
       });
   }, []);
-  console.log(login);
   // const [dataComent, setDataComent] = useState("");
 
   if (login === false) {
@@ -78,8 +77,10 @@ function Form() {
 
       const responseData = await response.json();
       setData(responseData);
+      console.log(responseData);
       if (responseData.isCreateOrder) {
         alert("замовлення успішно створено");
+        window.location.href = "/myOrder";
       } else {
         alert("замовлення не створено");
       }
@@ -120,7 +121,7 @@ function Form() {
                 <input
                   className="from__inputs"
                   placeholder="ТЕЛ+38(123)456 78 90"
-                  type="number"
+                  type="text"
                   value={phone}
                   onChange={handleChangePhone}
                 />

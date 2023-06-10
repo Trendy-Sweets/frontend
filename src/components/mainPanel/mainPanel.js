@@ -12,7 +12,9 @@ function MainPanel({ basketPrice, logaut, cart }) {
         window.location.reload();
       });
   };
-  console.log(cart + "количество продуктов в карзине");
+  const e = () => {
+    window.location.href = "/myOrder";
+  };
   return (
     <div className="main__panel">
       <a className="main__dop-info-panel" href="#">
@@ -107,9 +109,14 @@ function MainPanel({ basketPrice, logaut, cart }) {
         <div class="dropdown-content">
           {logaut ? (
             logaut.IsLogin ? (
-              <button className="drop__button" onClick={() => exitF()}>
-                Виxiд
-              </button>
+              <>
+                <button className="drop__button" onClick={() => exitF()}>
+                  Виxiд
+                </button>
+                <button className="drop__button" onClick={() => e()}>
+                  Mої замовлення
+                </button>
+              </>
             ) : (
               ""
             )
