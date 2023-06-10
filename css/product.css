@@ -1,0 +1,335 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #321a06;
+  font-family: "Gotham Pro", sans-serif;
+  background-image: url("../img/background-main.jpeg");
+  background-position: center;
+  /* height: 100vh; */
+  background-size: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.product {
+}
+.container {
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.product__inner {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 46px;
+  height: calc(100vh - 124px);
+  margin: 22px 0;
+  padding: 40px 30px 40px 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.product__block-left {
+  flex: 0 1 45%;
+}
+.product__img-left {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.product__block-right {
+  flex: 0 1 40%;
+  padding: 30px 35px 30px 90px;
+  background: #f3f3f3bd;
+  max-width: 100%;
+  border-radius: 20px;
+}
+.product__exit-right {
+  display: block;
+  margin-left: auto;
+  width: 50px;
+}
+.product__exit-right svg {
+  width: 50px;
+}
+.product__title-right {
+  font-family: Gotham Pro;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: left;
+  font-weight: 800;
+}
+.product__price-right {
+  padding-top: 15px;
+  font-family: Gotham Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  color: #ff9494;
+}
+.product__price-valuta-right {
+  font-family: Gotham Pro;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-left: 10px;
+  color: #321a06;
+}
+.product__time-right {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+}
+.product__time-right svg {
+  width: 50px;
+}
+.product__time-number {
+  margin-left: 10px;
+  font-family: Gotham Pro;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+}
+.product__colors-right {
+  padding-top: 10px;
+  display: flex;
+}
+.product__title-color-right {
+  padding-top: 3px;
+  font-family: Gotham Pro;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.product__list-colors-right {
+  display: flex;
+  padding-top: 8px;
+  margin-bottom: 20px;
+}
+.product__item-colors-right {
+  background-color: aqua;
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  display: flex;
+}
+.product__subtitle-right {
+  margin: 0;
+  margin-top: 10px;
+  font-family: Gotham Pro;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #f8d094;
+  display: inline-block;
+  border-radius: 10px;
+}
+.product__dot-info-right {
+  padding-top: 10px;
+  font-size: 25px;
+  max-width: 500px;
+}
+.product__carzina-right {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.product__add-carzina-right {
+  padding: 10px 40px;
+  font-size: 30px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #ff9494;
+}
+
+@media only screen and (max-width: 1200px) {
+  .product__block-right {
+    padding: 15px 15px 15px 30px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .product__block-right {
+    flex: 0 1 40%;
+    padding: 10px 10px 10px 20px;
+    border-radius: 20px;
+  }
+  .product__exit-right {
+    width: 35px;
+    height: 35px;
+  }
+  .product__title-right {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .product__price-right {
+    padding-top: 8px;
+    font-size: 35px;
+    line-height: 30px;
+  }
+  .product__time-right {
+    padding-top: 0px;
+  }
+  .product__time-right svg {
+    width: 35px;
+  }
+  .product__time-number {
+    margin-left: 5px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .product__colors-right {
+    padding-top: 0px;
+    display: flex;
+  }
+  .product__title-color-right {
+    padding-top: 3px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .product__list-colors-right {
+    display: flex;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .product__item-colors-right {
+    background-color: aqua;
+    width: 35px;
+    height: 35px;
+    margin: 0 4px;
+  }
+  .product__subtitle-right {
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .product__dot-info-right {
+    padding-top: 10px;
+    font-size: 20px;
+    max-width: 500px;
+  }
+  .product__carzina-right {
+    padding-top: 15px;
+  }
+  .product__exit-right svg {
+    width: 35px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .product__add-carzina-right {
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .product__block-left {
+    flex: 0 1 40%;
+  }
+  .product__block-right {
+    flex: 0 1 50%;
+    padding: 10px 10px 10px 20px;
+    border-radius: 20px;
+  }
+  .product__title-right {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .product__price-right {
+    padding-top: 6px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .product__price-valuta-right {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+    color: #321a06;
+  }
+  .product__time-right svg {
+    width: 25px;
+    height: 35px;
+  }
+  .product__time-number {
+    margin-left: 5px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .product__title-color-right {
+    padding-top: 3px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .product__item-colors-right {
+    width: 25px;
+    height: 25px;
+    margin: 0 4px;
+  }
+  .product__subtitle-right {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .product__dot-info-right {
+    padding-top: 5px;
+    font-size: 15px;
+    max-width: 300px;
+  }
+  .product__add-carzina-right {
+    padding: 5px 13px;
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 650px) {
+    .product__inner {
+        flex-direction:column;
+        border-radius: 20px;
+        height: calc(100vh - 50px);
+        margin: 5px 0;
+        padding: 20px 10px 20px 10px;
+        display: flex;
+        justify-content: normal;
+    }
+    .product__block-left, .product__block-right {
+        flex:none;
+
+    }
+    .product__block-right{
+        padding-bottom: 20px;
+    }
+    .product__img-left {
+        height: 300px;
+        border-radius: 10px;
+    }
+    .product__title-right {
+        font-size: 20px;
+        line-height: 20px;
+        
+    }
+}

@@ -1,0 +1,163 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #321a06;
+  font-family: "Gotham Pro", sans-serif;
+  background-image: url("../img/background-main.jpeg");
+  background-position: center;
+  /* height: 100vh; */
+  background-size: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.myOrder {
+}
+.container {
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.myOrder__inner {
+  height: calc(100vh - 84px);
+  margin: 22px 0;
+  padding: 40px 30px 0 30px;
+}
+.myOrder__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myOrder__title {
+  font-family: Gotham Pro;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 96px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+.myOrder__exit {
+}
+.myOrder__img-exit {
+  width: 50px;
+  height: 50px;
+}
+.myOrder__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background: rgba(243, 243, 243, 0.4);
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 15px solid rgba(217, 217, 217, 0.25);
+}
+.myOrder__delete-item {
+  border: none;
+  background-color: transparent;
+}
+.myOrder__delete-img {
+  width: 40px;
+  height: 40px;
+}
+.myOrder__number-item {
+  font-family: Gotham Pro;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.myOrder__citi-item {
+  font-family: Gotham Pro;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.myOrder__data-item {
+  font-family: Gotham Pro;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.myOrder__data-title {
+  padding-bottom: 5px;
+}
+.myOrder__count-item {
+  font-family: Gotham Pro;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.myOrder__color-item {
+  font-family: Gotham Pro;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+.myOrder_color-title {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.myOrder__list-color {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.myOrder__coloritem-list {
+  width: 25px;
+  height: 25px;
+  background-color: aqua;
+  margin: 0px 3px;
+  border-radius: 50%;
+}
+.myOrder__price-item {
+  font-family: Gotham Pro;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.myOrder__price-item span {
+  font-size: 24px;
+  padding-left: 4px;
+}
+.myOrder__status-item {
+  font-family: Gotham Pro;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: #99ec8c;
+  border: 3px solid #99ec8c;
+  padding: 10px 15px;
+  border-radius: 17px;
+}
