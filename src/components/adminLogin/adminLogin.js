@@ -34,7 +34,7 @@ function AdminLogin() {
     }
   };
   if (data.okForm) {
-    window.location.href = "../";
+    window.location.href = "../adminMain";
   }
 
   return (

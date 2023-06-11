@@ -1,0 +1,123 @@
+.adminPanel {
+}
+.container {
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.adminPanel__inner {
+  height: calc(100vh - 84px);
+  margin: 22px 0;
+  padding: 40px 30px 0 30px;
+}
+.adminPanel__header {
+  padding: 30px 10px;
+  display: flex;
+  font-weight: 900;
+  justify-content: space-between;
+  font-size: 35px;
+  border-bottom: 3px solid #000;
+}
+.adminPanel__exit {
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: #c36666;
+  border: 2px solid #000;
+  margin-left: 10px;
+}
+.adminPanel__body {
+  display: flex;
+  justify-content: space-between;
+}
+.adminPanel__left {
+  flex: 0 1 30%;
+  border-right: 3px solid #000;
+  margin: 0 auto;
+}
+.adminPanel__button-left {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  max-width: 300px;
+  text-align: center;
+  background-color: rgb(144, 187, 187);
+  font-size: 24px;
+}
+.adminPanel__right {
+  flex: 0 1 65%;
+  background-color: rgba(170, 197, 100, 0.682);
+  padding: 30px 50px;
+}
+.adminPanel__punt-right {
+  margin: 15px 0;
+  font-size: 24px;
+}
+.adminPanel_red-right,
+.adminPanel_black-right,
+.adminPanel_green-right {
+  padding-left: 5px;
+  font-weight: 900;
+}
+.adminPanel_red-right {
+  color: rgb(184, 40, 40);
+}
+.adminPanel_black-right {
+  color: #1a1818;
+}
+.adminPanel_green-right {
+  color: #0a3204;
+}
+.adminPanel__punt-right-last {
+  margin-top: 50px;
+}
+.adminPanel__title-right {
+  padding: 30px 0;
+}
+.adminPanel__input-body {
+}
+.adminPanel__input-body {
+  border: 0;
+  background: none;
+  color: #0a0a0a;
+  padding: 5px;
+  border: 2px solid #0a0a0a;
+  margin: 20px 0;
+}
+.adminPanel__input-body::placeholder {
+  color: #000;
+}
+.adminPanel__input-body:focus {
+  border: 0;
+  background: none;
+  border-bottom: 2px solid #0a0a0a;
+}
+.admin__right__input-file {
+  border: 2px solid #0a0a0a;
+  background-color: #ab2917;
+  margin: 20px 0;
+}
+.admin__chek {
+  display: flex;
+  align-items: center;
+}
+.admin__checkbox-right {
+  width: 35px;
+  height: 35px;
+  margin: 20px 0;
+}
+.admin__chek-span {
+  padding-left: 10px;
+}
+.admin__btn-add {
+  background-color: #ab2917;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+.adminPanel__button-left-active {
+  background-color: #ab2917;
+}
