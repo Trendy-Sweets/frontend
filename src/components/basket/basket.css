@@ -1,7 +1,7 @@
 .container {
   max-width: 1430px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 .basket__inner {
   background: rgba(255, 255, 255, 0.2);
@@ -35,7 +35,7 @@
   justify-content: space-between;
 }
 .basket__block-left {
-  flex: 0 1 70%;
+  flex: 0 1 75%;
 }
 .basket__top-line {
   display: flex;
@@ -64,7 +64,7 @@
 }
 .basket__item {
   font-family: Gotham Pro;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   margin-top: 20px;
@@ -151,10 +151,10 @@
 .basket__right-block {
   background: rgba(217, 217, 217, 0.4);
   border-radius: 20px;
-  padding: 20px 15px;
-  flex: 0 1 25%;
+  padding: 20px 10px;
+  flex: 0 1 20%;
   font-family: Gotham Pro;
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
@@ -196,7 +196,7 @@
 }
 .basket__design {
   display: inline-block;
-  font-size: 27px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 0em;
@@ -211,4 +211,161 @@
   text-align: center;
   font-size: 40px;
   padding-top: 50px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .basket__item {
+    font-family: Gotham Pro;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 20px;
+    background: rgba(243, 243, 243, 0.4);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+  }
+  .basket__time-title {
+    text-align: center;
+    max-width: 150px;
+    padding-left: 18px;
+  }
+  .basket__img {
+    padding-left: 8px;
+  }
+  .basket__name {
+    padding-left: 8px;
+    text-align: center;
+    max-width: 170px;
+    color: #321a06;
+  }
+  .basket__time {
+    color: #321a06;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .basket__time-number {
+    padding-left: 5px;
+  }
+  .basket__amount {
+    padding-left: 8px;
+  }
+  .basket__price {
+    padding-left: 8px;
+    font-family: Gotham Pro;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
+    color: #321a06;
+    display: flex;
+    align-items: center;
+  }
+  .basket__design {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .basket__block {
+    flex-direction: column;
+  }
+  .basket__right-block {
+    margin-top: 20px;
+  }
+  .basket__time-title {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .basket__name {
+    padding-left: 4px;
+    text-align: center;
+    max-width: 110px;
+    color: #321a06;
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .basket__time-number {
+    padding-left: 4px;
+  }
+  .basket__img {
+    padding-left: 4px;
+    width: 45px;
+    height: 60px;
+  }
+  .basket__cross {
+    padding: 0px;
+  }
+  .basket__amount-sum {
+    padding: 0 3px;
+    font-family: Gotham Pro;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .amaut-button {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+  .basket__price {
+    padding-left: 4px;
+  }
+  .basket__top-line {
+    padding: 10px 14px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .basket__count-first {
+    padding-right: 10px;
+    border-right: 2px solid #000;
+    margin-right: 10px;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .basket__img {
+    padding-left: 2px;
+    width: 40px;
+    height: 40px;
+  }
+  .basket__time-number {
+    padding-left: 4px;
+    text-align: center;
+  }
+  .basket__inner {
+    border-radius: 35px;
+    min-height: calc(100vh - 124px);
+    margin: 22px 0;
+    padding: 20px 5px 20px 5px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .basket__time-number {
+    display: none;
+  }
+  .basket .container {
+    padding: 0 10px;
+  }
+  .basket__right-block {
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 20px;
+    padding: 5px 10px;
+    flex: 0 1 20%;
+    font-family: Gotham Pro;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+  }
+  .basket__line {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
 }

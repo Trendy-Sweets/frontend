@@ -1,11 +1,14 @@
 import imgProduct from "../../img/img-product.png";
+import icomtime from "../../img/clock-time.svg";
 function MainListItemMin({
   productId,
   productgroupName,
   productgorupMinPrice,
   products,
   productgroupMaxTime,
+  class0,
 }) {
+  let classS = `main__item ${class0}`;
   const productColor = products.map((item) => {
     return (
       <a
@@ -18,37 +21,12 @@ function MainListItemMin({
 
   return (
     <>
-      <div className="main__item">
+      <div className={classS}>
         <img className="main__img-item" src={imgProduct} alt="" />
         <h3 className="main__title-item">{productgroupName}</h3>
         <div className="main__block-item">
           <div className="main__time-item">
-            <svg
-              width="35"
-              height="32"
-              viewBox="0 0 35 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="0.0859375"
-                y="0.126221"
-                width="34.1703"
-                height="31.2722"
-                fill="url(#pattern0)"
-              />
-              <defs>
-                <pattern
-                  id="pattern0"
-                  patternContentUnits="objectBoundingBox"
-                  width="1"
-                  height="1"
-                >
-                  <use transform="matrix(0.00178748 0 0 0.00195312 0.0424059 0)" />
-                </pattern>
-                <image id="image0_538_1243" width="512" height="512" />
-              </defs>
-            </svg>
+            <img src={icomtime} alt="" />
             <span className="main__time-do-item">
               {productgroupMaxTime} години
             </span>
@@ -61,7 +39,7 @@ function MainListItemMin({
             className="main__full-info-item"
             href={
               products
-                ? `${window.location.origin}/product/</div>${products[0].productId}`
+                ? `${window.location.origin}/product/${products[0].productId}`
                 : "#"
             }
           >
@@ -76,5 +54,4 @@ function MainListItemMin({
     </>
   );
 }
-
 export default MainListItemMin;

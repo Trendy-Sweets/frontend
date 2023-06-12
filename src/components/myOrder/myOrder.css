@@ -6,7 +6,7 @@
   padding: 0 15px;
 }
 .myOrder__inner {
-  height: calc(100vh - 84px);
+  min-height: calc(100vh - 84px);
   margin: 22px 0;
   padding: 40px 30px 0 30px;
 }
@@ -137,4 +137,104 @@
 
   padding-top: 40px;
   color: #fff;
+}
+
+@media only screen and (max-width: 850px) {
+  .myOrder__inner {
+    min-height: calc(100vh - 40px);
+    margin: 10px 0;
+    padding: 20px 10px 10px 10px;
+  }
+  .myOrder .container {
+    padding: 0 5px;
+  }
+  .myOrder__item {
+    padding: 10px 5px;
+    background: rgba(243, 243, 243, 0.4);
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 10px solid rgba(217, 217, 217, 0.25);
+  }
+  .myOrder__number-item {
+    font-family: Gotham Pro;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+  }
+  .myOrder__data-item {
+    font-family: Gotham Pro;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .myOrder__price-item {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .myOrder__price-item span {
+    font-size: 20px;
+    padding-left: 2px;
+  }
+  .myOrder__status-item {
+    font-family: Gotham Pro;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: center;
+    color: #99ec8c;
+    border: 2px solid #99ec8c;
+    padding: 7px 8px;
+    border-radius: 17px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .myOrder__title {
+    font-family: Gotham Pro;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  .myOrder__item {
+    flex-wrap: wrap;
+    padding: 10px 5px;
+    margin: 5px 0;
+  }
+  .myOrder__number-item {
+    flex: 0 1 100%;
+    text-align: left;
+    border-bottom: 2px solid #353232;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .myOrder__citi-item {
+    flex: 0 1 45%;
+  }
+  .myOrder__data-item {
+    flex: 0 1 45%;
+    margin-bottom: 10px;
+  }
+  .myOrder__price-item {
+    text-align: center;
+    flex: 0 1 45%;
+  }
+  .myOrder__status-item {
+    text-align: center;
+    flex: 0 1 45%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .myOrder__number-item {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
 }

@@ -229,3 +229,128 @@
 .form__inpput-tovar:hover .dropbtn {
   background: rgba(232, 231, 231, 0.7);
 }
+@media only screen and (max-width: 1000px) {
+  .form__block {
+    flex-direction: column;
+  }
+  .form__right-block {
+    margin: 20px 0;
+  }
+  .form__inpput-tovar {
+    max-width: 95%;
+
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .form__title {
+    font-size: 45px;
+    line-height: 40px;
+    color: #f1f1f1;
+  }
+  .from__line-inputs {
+    border-radius: 30px;
+    padding: 10px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .from__inputs {
+    margin: 5px 0;
+    max-width: 100%;
+    border: 0;
+  }
+  .form__box {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #686868;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 0;
+  }
+  .form__inner {
+    min-height: calc(100vh - 64px);
+    margin: 10px 0;
+    padding: 20px 10px 0 10px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .form__line__form {
+    padding-top: 10px;
+    flex-direction: column;
+  }
+  .from-form__block {
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(243, 243, 243, 0.4);
+    border-radius: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .form__title {
+    font-size: 35px;
+    line-height: 40px;
+    color: #f1f1f1;
+  }
+  .form__block {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__title-form {
+    font-family: Advent Pro;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .form__box {
+    max-width: 90%;
+    height: 35px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #686868;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 0;
+  }
+  .from-form__block {
+    padding: 10px;
+    margin: 5px 0;
+  }
+  .form__inpput-tovar {
+    margin-top: 5px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 96%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 10px;
+    font-size: 13px;
+  }
+  .form__right-block {
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 20px;
+    padding: 15px 10px;
+  }
+}

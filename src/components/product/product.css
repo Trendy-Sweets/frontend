@@ -321,4 +321,28 @@
     font-size: 20px;
     line-height: 20px;
   }
+  .basket-button {
+    right: 30px;
+    top: 400px;
+    width: 40px;
+    height: 40px;
+    background-color: #f8d094;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .basket-button .main__basket-counter {
+    top: -5px;
+    right: 7px;
+    background-color: #dd3c3cc7;
+    border-radius: 50%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding: 1px 5px 1px 5px;
+    right: 5px;
+  }
+}
+@media only screen and (max-width: 1413px) {
 }

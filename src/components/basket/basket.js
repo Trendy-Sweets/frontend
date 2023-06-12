@@ -176,7 +176,6 @@ function Basket() {
                       )
                     }
                   >
-                    {" "}
                     Оформити заказ
                   </button>
                 )}
