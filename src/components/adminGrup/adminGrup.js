@@ -16,30 +16,33 @@ function AdminGrup() {
       <div className="container">
         <div className="adminPanel__inner">
           <div className="adminPanel__header">
-            <span className="adminPanel__name-pajes">Cоздание группы</span>
+            <span className="adminPanel__name-pajes">Створення групи</span>
             <div className="adminPanel__header-right">
               <span className="adminPanel__name-panel">
-                Адмистратор системы{" "}
+                Адмістратор системи
               </span>
               <button className="adminPanel__exit" onClick={() => exitF()}>
-                Выход
+                Вихід
               </button>
             </div>
           </div>
 
           <div className="adminPanel__body">
             <div className="adminPanel__left">
-              <a className="adminPanel__button-left" href="#">
-                НА управление исполнителями
+              <a
+                className="adminPanel__button-left admin__activ-btn"
+                href="../adminProduct"
+              >
+                На управління виконавцями
               </a>
               <a
                 className="adminPanel__button-left adminPanel__button-left-active"
                 href="#"
               >
-                Создать группу продуктов
+                Створити групу продуктів
               </a>
               <a className="adminPanel__button-left" href="#">
-                Создать продукт
+                Створити продукт
               </a>
             </div>
 
@@ -62,10 +65,10 @@ function AdminGrup() {
                     id="html"
                     type="checkbox"
                   />
-                  <span className="admin__chek-span">опубликовать ?</span>
+                  <span className="admin__chek-span">опублікувати?</span>
                 </div>
 
-                <button className="admin__btn-add">Cоздать группу</button>
+                <button className="admin__btn-add">Створити групу</button>
               </div>
             </div>
           </div>

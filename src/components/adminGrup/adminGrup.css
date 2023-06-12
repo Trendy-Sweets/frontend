@@ -26,6 +26,10 @@
   border: 2px solid #000;
   margin-left: 10px;
 }
+.adminPanel__left .admin__activ-btn {
+  background-color: #64af5887;
+}
+
 .adminPanel__body {
   display: flex;
   justify-content: space-between;

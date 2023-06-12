@@ -18,6 +18,10 @@
   font-size: 35px;
   border-bottom: 3px solid #000;
 }
+.adminPanel__left .admin__activ-btn {
+  background-color: #64af5887;
+}
+
 .adminPanel__exit {
   border-radius: 20px;
   padding: 10px 20px;

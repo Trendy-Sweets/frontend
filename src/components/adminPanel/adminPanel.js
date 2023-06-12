@@ -38,13 +38,13 @@ function AdminPanel() {
           {logout ? (
             <>
               <div className="adminPanel__header">
-                <span className="adminPanel__name-pajes">Aдмин.панель</span>
+                <span className="adminPanel__name-pajes">Адмін.панель</span>
                 <div className="adminPanel__header-right">
                   <span className="adminPanel__name-panel">
                     {user ? user : ""}
                   </span>
                   <button className="adminPanel__exit" onClick={() => exitF()}>
-                    Выход
+                    Вихід
                   </button>
                 </div>
               </div>
@@ -52,44 +52,47 @@ function AdminPanel() {
               <div className="adminPanel__body">
                 <div className="adminPanel__left">
                   <a className="adminPanel__button-left" href="#">
-                    Управление исполнителями
+                    Управління виконавцями
                   </a>
                   <a className="adminPanel__button-left" href="#">
-                    Управление заказами
+                    Управління замовленнями
                   </a>
-                  <a className="adminPanel__button-left" href="../adminProduct">
-                    Управление товарами
+                  <a
+                    className="adminPanel__button-left admin__activ-btn"
+                    href="../adminProduct"
+                  >
+                    Управління товарами
                   </a>
                   <a className="adminPanel__button-left" href="#">
-                    Финансы учет
+                    Фінанси облік
                   </a>
                   <a className="adminPanel__button-left" href="#">
-                    Настройка системы
+                    Налаштування системи
                   </a>
                 </div>
 
                 <div className="adminPanel__right">
                   <div className="adminPanel__body-right">
                     <p className="adminPanel__punt-right">
-                      Заявки на подтверждение исполнителей:
+                      Заявки на підтвердження виконавців:
                       <span className="adminPanel_red-right">
-                        {response ? response : 0} шт.
+                        {response ? response : 0}
                       </span>
                     </p>
                     <p className="adminPanel__punt-right">
-                      Всего подтвержденных исполнителей в систем:
+                      Усього підтверджених виконавців до систем:
                       <span className="adminPanel_black-right">
                         {response1 ? response1 : 0}
                       </span>
                     </p>
                     <p className="adminPanel__punt-right">
-                      Число исполнителей готовых принять заказ:
+                      Число виконавців готових прийняти замовлення:
                       <span className="adminPanel_green-right">
                         {response2 ? response2 : 0}
                       </span>
                     </p>
                     <p className="adminPanel__punt-right adminPanel__punt-right-last">
-                      Заказов в работе:
+                      Замовлень у роботі:
                       <span className="adminPanel_green-right">
                         {response3 ? response3 : 0}
                       </span>
@@ -100,7 +103,7 @@ function AdminPanel() {
             </>
           ) : (
             <h3 className="adminPanel__puth-title">
-              Вы не авторезированы в админ панель
+              Ви не авторезовані в адмін панель
             </h3>
           )}
         </div>
