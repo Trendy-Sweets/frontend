@@ -11,6 +11,7 @@ import AdminLogin from "./components/adminLogin/adminLogin";
 import AdminProduct from "./components/adminProduct/adminProduct";
 import AdminPanel from "./components/adminPanel/adminPanel";
 import AdminGrup from "./components/adminGrup/adminGrup";
+import Zvort from "./components/zvort/zvort";
 function App() {
   return (
     <>
@@ -27,6 +28,7 @@ function App() {
           <Route path="adminMain" element={<AdminPanel />} />
           <Route path="adminProduct" element={<AdminProduct />} />
           <Route path="adminGrupt" element={<AdminGrup />} />
+          <Route path="zvort" element={<Zvort />} />
         </Routes>
       </BrowserRouter>
     </>

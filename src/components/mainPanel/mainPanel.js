@@ -15,6 +15,9 @@ function MainPanel({ basketPrice, logaut, cart }) {
   const e = () => {
     window.location.href = "/myOrder";
   };
+  const zvorot = () => {
+    window.location.href = "/zvort";
+  };
   return (
     <div className="main__panel">
       <a className="main__dop-info-panel" href="#">
@@ -107,6 +110,9 @@ function MainPanel({ basketPrice, logaut, cart }) {
           </svg>
         </button>
         <div class="dropdown-content">
+          <button className="drop__button" onClick={() => zvorot()}>
+            зворотний зв'язок
+          </button>
           {logaut ? (
             logaut.IsLogin ? (
               <>
