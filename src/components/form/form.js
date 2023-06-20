@@ -12,7 +12,7 @@ function Form() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("+38(123)456 78 90");
   const [address, setAddress] = useState("");
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState("23.08.2024");
   const [time, setTime] = useState("");
   const [login, setLogin] = useState("");
 
@@ -53,6 +53,7 @@ function Form() {
   };
   const handleChangeDate = (e) => {
     setDate(e.target.value);
+    console.log(date);
   };
   const handleChangeTime = (e) => {
     setTime(e.target.value);
@@ -149,10 +150,10 @@ function Form() {
                 </div>
                 <div className="form__form-right from-form__block">
                   <h4 className="form__title-form">ЧАС ДОСТАВКИ</h4>
+
                   <input
                     className="form__box from__input-ctile"
-                    placeholder="ДАТА 00-00-2029"
-                    type="text"
+                    type="date"
                     value={date}
                     onChange={handleChangeDate}
                   />
@@ -169,7 +170,7 @@ function Form() {
                 <button className="dropbtn">
                   <span>МОЄ ЗАМОВЛЕННЯ</span> <img src={strelcka} alt="" />
                 </button>
-                <div className="dropdown-content">
+                <div className="dropdown-content00">
                   {products
                     ? products.map((item) => {
                         return (

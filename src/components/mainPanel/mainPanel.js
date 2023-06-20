@@ -21,7 +21,7 @@ function MainPanel({ basketPrice, logaut, cart }) {
   return (
     <div className="main__panel">
       <a className="main__dop-info-panel" href="#">
-        Більше інформації
+        Заробляй з нами
       </a>
       <a className="main__basket-panel" href="/basket">
         <svg
@@ -111,7 +111,7 @@ function MainPanel({ basketPrice, logaut, cart }) {
         </button>
         <div class="dropdown-content">
           <button className="drop__button" onClick={() => zvorot()}>
-            зворотний зв'язок
+            Зворотний зв'язок
           </button>
           {logaut ? (
             logaut.IsLogin ? (

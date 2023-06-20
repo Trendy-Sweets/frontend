@@ -2,6 +2,7 @@
   max-width: 1430px;
   margin: 0 auto;
   padding: 0 10px;
+  font-family: "Gotham Pro", sans-serif;
 }
 .basket__inner {
   background: rgba(255, 255, 255, 0.2);
@@ -18,7 +19,7 @@
   justify-content: space-between;
 }
 .basket__title {
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   font-size: 65px;
   font-weight: 700;
   line-height: 70px;
@@ -63,7 +64,7 @@
 .basket__body {
 }
 .basket__item {
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -128,14 +129,14 @@
 }
 .basket__amount-sum {
   padding: 0 8px;
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   font-size: 35px;
   font-weight: 700;
   line-height: 39px;
 }
 .basket__price {
   padding-left: 18px;
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 33px;
@@ -153,14 +154,17 @@
   border-radius: 20px;
   padding: 20px 10px;
   flex: 0 1 20%;
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   font-size: 19px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
 }
 .basket__line {
+  font-family: "Gotham Pro", sans-serif;
   display: flex;
+  color: #fff;
+  font-weight: 500;
   justify-content: space-between;
   padding: 25px 0;
 }
@@ -187,7 +191,7 @@
 }
 .basket__dop-info {
   padding-top: 3px;
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 14px;
@@ -195,9 +199,10 @@
   max-width: 105px;
 }
 .basket__design {
+  font-family: "Gotham Pro", sans-serif;
   display: inline-block;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 26px;
   letter-spacing: 0em;
   margin: 0 auto;
@@ -215,7 +220,7 @@
 
 @media only screen and (max-width: 1300px) {
   .basket__item {
-    font-family: Gotham Pro;
+    font-family: "Gotham Pro", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
@@ -255,7 +260,7 @@
   }
   .basket__price {
     padding-left: 8px;
-    font-family: Gotham Pro;
+    font-family: "Gotham Pro", sans-serif;
     font-size: 25px;
     font-weight: 700;
     line-height: 33px;
@@ -301,7 +306,7 @@
   }
   .basket__amount-sum {
     padding: 0 3px;
-    font-family: Gotham Pro;
+    font-family: "Gotham Pro", sans-serif;
     font-size: 25px;
     font-weight: 700;
     line-height: 30px;
@@ -357,7 +362,7 @@
     border-radius: 20px;
     padding: 5px 10px;
     flex: 0 1 20%;
-    font-family: Gotham Pro;
+    font-family: "Gotham Pro", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 20px;
