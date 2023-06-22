@@ -20,7 +20,7 @@ function MainPanel({ basketPrice, logaut, cart }) {
   };
   return (
     <div className="main__panel">
-      <a className="main__dop-info-panel" href="#">
+      <a className="main__dop-info-panel" href="../zvort">
         Заробляй з нами
       </a>
       <a className="main__basket-panel" href="/basket">
